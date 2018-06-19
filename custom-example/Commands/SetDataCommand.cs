@@ -1,6 +1,4 @@
-using CustomExample.Commands;
-
-namespace CustomExample {
+namespace CustomExample.Commands {
     public class SetDataCommand : ICommand {
         public SetDataCommand(string key, string value) {
             Key = key;

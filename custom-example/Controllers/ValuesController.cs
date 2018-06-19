@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using CustomExample.Bus.Command;
 using CustomExample.Bus.Query;
+using CustomExample.Commands;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CustomExample.Controllers
-{
+namespace CustomExample.Controllers {
     [Route("api/[controller]")]
     public class ValuesController : Controller {
         private IQueryBus _queryBus;
@@ -20,7 +20,7 @@ namespace CustomExample.Controllers
         // GET api/values
         [HttpGet("{text}")]
         public async Task<string> Get(string text) {
-            return await _queryBus.Process(new GetDataQuery(text));
+            return await _queryBus.Process<GetDataQuery, string>(new GetDataQuery(text));
         }
 
         // POST api/values
@@ -31,8 +31,8 @@ namespace CustomExample.Controllers
 
         // DELETE api/values/5
         [HttpDelete("{key}")]
-        public async void Delete(string key) { 
-             await _commandBus.SendCommand(new DeleteDataCommand(key));
+        public async void Delete(string key) {
+            await _commandBus.SendCommand(new DeleteDataCommand(key));
         }
     }
 }

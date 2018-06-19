@@ -3,7 +3,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using CustomExample.Queries;
 using CustomExample.Repositories;
-using MediatoRExample;
 
 namespace CustomExample {
     public class GetDataQueryHandler : IQueryHandler<GetDataQuery, string> {
@@ -14,10 +13,9 @@ namespace CustomExample {
             _dataRepository = dataRepository;
         }
 
-        public Task<string> Handle(GetDataQuery request) {
-
+        public Task<string> Execute(GetDataQuery query) {
             return Task.Run(() => {
-                var result = _dataRepository.Get(request.Text);
+                var result = _dataRepository.Get(query.Text);
                 return result;
             });
         }

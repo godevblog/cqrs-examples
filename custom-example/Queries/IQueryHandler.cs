@@ -1,9 +1,8 @@
 using System.Threading.Tasks;
 
-namespace CustomExample.Queries
-{
-    public interface IQueryHandler<in TQuery, out TResult> where TQuery : IQuery<TResult>
+namespace CustomExample.Queries {
+    public interface IQueryHandler<in TQuery, TResult> where TQuery : IQuery<TResult> 
     {
-         Task<TResult> Handle(TQuery query);
+        Task<TResult> Execute(TQuery query);
     }
 }

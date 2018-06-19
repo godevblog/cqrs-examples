@@ -18,7 +18,7 @@ namespace MediatoRExample {
 
             return Task.Run(() => {
                 var result = _dataRepository.Get(request.Text);
-                return result;
+                return result;                                      
             });
         }
     }

@@ -12595,11 +12595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\PROJECTS\\GEMUSTUDIO\\VS\\cqrs-examples\\custom-example\\custom-example.csproj",
+      "projectUniqueName": "D:\\PROJECTS\\GEMUSTUDIO\\VS\\cqrs-examples\\custom-example\\custom-example.csproj",
       "projectName": "custom-example",
-      "projectPath": "d:\\PROJECTS\\GEMUSTUDIO\\VS\\cqrs-examples\\custom-example\\custom-example.csproj",
+      "projectPath": "D:\\PROJECTS\\GEMUSTUDIO\\VS\\cqrs-examples\\custom-example\\custom-example.csproj",
       "packagesPath": "C:\\Users\\Krzysztof Owsiany\\.nuget\\packages\\",
-      "outputPath": "d:\\PROJECTS\\GEMUSTUDIO\\VS\\cqrs-examples\\custom-example\\obj\\",
+      "outputPath": "D:\\PROJECTS\\GEMUSTUDIO\\VS\\cqrs-examples\\custom-example\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
