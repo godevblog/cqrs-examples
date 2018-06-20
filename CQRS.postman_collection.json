@@ -1,0 +1,92 @@
+{
+	"id": "08194353-7686-74a1-f207-3fb88de97534",
+	"name": "CQRS",
+	"description": "",
+	"order": [
+		"3640c39b-681e-69f7-78bd-84fdfb6753f0",
+		"f2ab44bf-fdd5-6a86-855e-ccdb97ea72ba",
+		"c0785606-ccef-d2d4-07e2-54c933764361"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1526411420503,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3640c39b-681e-69f7-78bd-84fdfb6753f0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/values",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1526413175777,
+			"name": "Set",
+			"description": "",
+			"collectionId": "08194353-7686-74a1-f207-3fb88de97534",
+			"responses": [],
+			"rawModeData": "{\r\n    \"key\": \"1\",\r\n    \"value\": \"some key\"\r\n}"
+		},
+		{
+			"id": "c0785606-ccef-d2d4-07e2-54c933764361",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/api/values/get/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1526413212070,
+			"name": "Delete",
+			"description": "",
+			"collectionId": "08194353-7686-74a1-f207-3fb88de97534",
+			"responses": []
+		},
+		{
+			"id": "f2ab44bf-fdd5-6a86-855e-ccdb97ea72ba",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/api/values/get/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "08194353-7686-74a1-f207-3fb88de97534",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1526411445592,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
