@@ -9,7 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="EventFlow" Version="0.59.3396" />
+   <PackageReference Include="autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.2" />
+    <PackageReference Include="EventFlow" Version="0.60.3490" />
+    <PackageReference Include="EventFlow.Autofac" Version="0.60.3490" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
   </ItemGroup>
 
